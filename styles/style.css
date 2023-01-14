@@ -278,3 +278,147 @@ footer.footer {
     font-size: 1.75rem;
     margin: 0.5rem;
 }
+
+/* Media Query CSS */
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .hero-img-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-container {
+        width: 90%;
+    }
+
+    .img-gallery {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.25rem 0.25rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .hero-area {
+        gap: 0.1rem;
+    }
+    
+    .product-container {
+        width: 70%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.featured-products {
+        gap: 2rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        padding-top: 2.5rem;
+    }
+
+    .header, .hero-area {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hero-area {
+        width: 90%;
+        flex-direction: column-reverse;
+    }
+
+    .hero-img-container img {
+        width: 80%;
+    }
+
+    .hero-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 2.25rem;
+        line-height: 3.4rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .product-container {
+        width: 90%;
+    }
+
+    .p-img-container {
+        padding-top: 1rem;
+    }
+
+    .p-details {
+        padding: 0.75rem 1.25rem;
+    }
+
+    section.featured-products {
+        gap: 3rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fea-txt-container {
+        align-items: center;
+    }
+
+    section.img-section {
+        width: 85%;
+        padding: 2.1rem 1rem;
+    }
+
+    .img-gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .fea-title {
+        font-size: 2rem;
+    }
+
+    p.fea-text, button.fea-btn, .footer h3 {
+        font-size: 1rem;
+    }
+
+    .see-more-link{
+        justify-content: center;
+    }
+    
+}
+
+/* For Mobile - Device Screen */
+@media screen and (max-width: 576px) {
+
+    .menu {
+        gap: 0.75rem !important;
+    }
+
+    .img-gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem 0.25rem !important;
+    }
+
+    .product-container {
+        width: 80%;
+    }
+
+    .hero-img-container img {
+        width: 100%;
+    }
+    
+}
