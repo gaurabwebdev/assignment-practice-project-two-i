@@ -94,34 +94,41 @@ a.menu-icons svg {
     margin-bottom: 1rem;
 }
 
-button.hero-btn {
+button.hero-btn, button.fea-btn {
     display: flex;
+    padding: 0.75rem 1.5rem;
     align-items: center;
-    padding: 0.75rem;
     background: var(--hot-pink);
     border-style: none;
-    border-radius: 50px;
     font-weight: 600;
     color: #fff;
+    gap: 0.75rem;
 }
 
-button.hero-btn svg {
-    margin-left: 0.5rem;
+button.hero-btn {
+    border-radius: 50px;
 }
+
+/* button.hero-btn svg {
+    margin-left: 0.5rem;
+} */
 
 .hero-img-container{
     background: url(images/circle.svg);
 }
 
 /* Image Gallery CSS */
+section.img-section, section.featured-products {
+    width: 78%;
+    margin: 6.2rem auto;
+}
+
 section.img-section {
     width: 78%;
-    margin: auto;
     padding: 2.1rem 4rem;
-    box-shadow: 0 0 0.1rem #AAAAAA;
+    box-shadow: 0 0 0.1rem #aaaaaa;
     border-radius: 5px;
-    margin-top: 4.3rem;
-    margin-bottom: 6.2rem;
+    margin: 6.2rem auto;
 }
 
 .img-gallery {
@@ -135,13 +142,139 @@ section.img-section {
     margin: auto;
 }
 
+/* Product Section CSS */
+.section-title{
+    text-align: center;
+    font-size: 1.75rem;
+    line-height: 4.4rem;
+    font-weight: 600;
+}
+
+.product-container {
+    width: 72%;
+    margin: 3rem auto 2rem;
+    display: grid;
+    gap: 1.75rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.p-img-container {
+    padding-top: 0.5rem;
+}
+
+.p-details {
+    padding: 0.75rem;
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+}
+
+.p-title{
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+}
+
+.p-price{
+    font-family: var(--int);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+
+span.rate {
+    margin-left: 10px;
+}
+
+span.stars > .fa-star, .fa-star-half-stroke {
+    color: #FB8200;
+}
+
+.p-text {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: var(--gctwo);
+}
+
+.see-more-link {
+    width: 72%;
+    margin: auto;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--hot-pink);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
 
 
+/* Featured Products CSS */
+section.featured-products {
+    display: flex;
+    gap: 6rem;
+}
+
+.fea-txt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+h3.fea-title{
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3.75rem;
+    color: var(--bcthree);
+}
+
+p.fea-text, button.fea-btn, .footer h3{
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
 
 
+p.fea-text{
+    color: var(--gctwo);
+}
 
 
+/* Footer CSS */
 
+footer.footer {
+    padding: 3.125rem 0;
+    text-align: center;
+    background: var(--bcthree);
+    color: #fff;
+}
 
+.footer p{
+    font-weight: 700;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
 
+.social a{
+    color: #fff;
+    text-decoration: none;
+}
 
+.social svg {
+    font-size: 1.75rem;
+    margin: 0.5rem;
+}
